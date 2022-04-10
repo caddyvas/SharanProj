@@ -1,10 +1,14 @@
-package com.shashank.platform.classroomappui;
+package com.shashank.platform.classroomappui.mainUI;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Window;
 import android.view.WindowManager;
+
+import com.shashank.platform.classroomappui.R;
+
+import io.realm.Realm;
 
 public class SplashScreen extends AppCompatActivity {
 
@@ -26,5 +30,9 @@ public class SplashScreen extends AppCompatActivity {
             }
         };
         timerThread.start();
+    }
+
+    private void initializeRealm() {
+        Realm.init(this);
     }
 }

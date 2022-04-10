@@ -1,8 +1,10 @@
-package com.shashank.platform.classroomappui;
+package com.shashank.platform.classroomappui.mainUI;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ListView;
+
+import com.shashank.platform.classroomappui.R;
 
 public class Settings extends AppCompatActivity {
 

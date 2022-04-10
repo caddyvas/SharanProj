@@ -4,50 +4,56 @@
 
     <application
         android:allowBackup="true"
+        android:name=".ClassRoomUIMain"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Settings"
+        <activity
+            android:name=".mainUI.Settings"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:label=""
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Announcements"
+            android:name=".mainUI.Announcements"
             android:configChanges="orientation|screenSize"
             android:label="Announcements" />
         <activity
-            android:name=".Lectures"
+            android:name=".mainUI.Lectures"
             android:configChanges="orientation|screenSize"
             android:label="Lectures" />
         <activity
-            android:name=".Events"
+            android:name=".mainUI.Events"
             android:configChanges="orientation|screenSize"
             android:label="Events" />
         <activity
-            android:name=".Courses"
+            android:name=".mainUI.Courses"
             android:configChanges="orientation|screenSize"
             android:label="Courses" />
         <activity
-            android:name=".MyProfile"
+            android:name=".mainUI.MyProfile"
             android:configChanges="orientation|screenSize"
             android:label="My Profile" />
         <activity
-            android:name=".Home"
+            android:name=".mainUI.Home"
             android:label="@string/title_activity_home"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".SignupScreen"
+            android:name=".mainUI.SignupScreen"
             android:configChanges="orientation|screenSize"
             android:theme="@style/MyAppTheme" />
         <activity
-            android:name=".LoginScreen"
+            android:name=".mainUI.ProfileCreation"
             android:configChanges="orientation|screenSize"
             android:theme="@style/MyAppTheme" />
         <activity
-            android:name=".SplashScreen"
+            android:name=".mainUI.LoginScreen"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/MyAppTheme" />
+        <activity
+            android:name=".mainUI.SplashScreen"
             android:configChanges="orientation|screenSize"
             android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>

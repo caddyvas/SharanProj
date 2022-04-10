@@ -1,4 +1,4 @@
-package com.shashank.platform.classroomappui;
+package com.shashank.platform.classroomappui.mainUI;
 
 import android.app.Activity;
 import android.view.LayoutInflater;
@@ -6,6 +6,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
+
+import com.shashank.platform.classroomappui.R;
 
 public class CustomAdapterSetting extends ArrayAdapter<String> {
     Activity context;

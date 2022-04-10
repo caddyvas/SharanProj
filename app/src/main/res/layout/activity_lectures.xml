@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Lectures">
+    tools:context=".mainUI.Lectures">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -55,32 +55,6 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="100"
                         android:orientation="horizontal">
-
-                        <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="50"
-                            android:orientation="vertical">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginBottom="4dp"
-                                android:drawableLeft="@drawable/ic_access_time_red_24dp"
-                                android:drawablePadding="8dp"
-                                android:fontFamily="@font/calibri"
-                                android:gravity="center"
-                                android:text="08:00 - 10:00" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:drawableLeft="@drawable/ic_event_available_red_24dp"
-                                android:drawablePadding="8dp"
-                                android:fontFamily="@font/calibri"
-                                android:gravity="center"
-                                android:text="12 Jul 2019" />
-                        </LinearLayout>
 
                         <LinearLayout
                             android:layout_width="0dp"
@@ -166,37 +140,11 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginBottom="4dp"
-                                android:drawableLeft="@drawable/ic_access_time_red_24dp"
-                                android:drawablePadding="8dp"
-                                android:fontFamily="@font/calibri"
-                                android:gravity="center"
-                                android:text="11:00 - 12:00" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:drawableLeft="@drawable/ic_event_available_red_24dp"
-                                android:drawablePadding="8dp"
-                                android:fontFamily="@font/calibri"
-                                android:gravity="center"
-                                android:text="14 Jul 2019" />
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="50"
-                            android:orientation="vertical">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginBottom="4dp"
                                 android:drawableLeft="@drawable/ic_location_on_red_24dp"
                                 android:drawablePadding="8dp"
                                 android:fontFamily="@font/calibri"
                                 android:gravity="center"
-                                android:text="M305" />
+                                android:text="M315" />
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -255,32 +203,6 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="100"
                         android:orientation="horizontal">
-
-                        <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="50"
-                            android:orientation="vertical">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginBottom="4dp"
-                                android:drawableLeft="@drawable/ic_access_time_red_24dp"
-                                android:drawablePadding="8dp"
-                                android:fontFamily="@font/calibri"
-                                android:gravity="center"
-                                android:text="12:00 - 01:00" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:drawableLeft="@drawable/ic_event_available_red_24dp"
-                                android:drawablePadding="8dp"
-                                android:fontFamily="@font/calibri"
-                                android:gravity="center"
-                                android:text="15 Jul 2019" />
-                        </LinearLayout>
 
                         <LinearLayout
                             android:layout_width="0dp"
@@ -366,32 +288,6 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginBottom="4dp"
-                                android:drawableLeft="@drawable/ic_access_time_red_24dp"
-                                android:drawablePadding="8dp"
-                                android:fontFamily="@font/calibri"
-                                android:gravity="center"
-                                android:text="08:00 - 10:00" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:drawableLeft="@drawable/ic_event_available_red_24dp"
-                                android:drawablePadding="8dp"
-                                android:fontFamily="@font/calibri"
-                                android:gravity="center"
-                                android:text="12 Jul 2019" />
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="50"
-                            android:orientation="vertical">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginBottom="4dp"
                                 android:drawableLeft="@drawable/ic_location_on_red_24dp"
                                 android:drawablePadding="8dp"
                                 android:fontFamily="@font/calibri"
@@ -455,32 +351,6 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="100"
                         android:orientation="horizontal">
-
-                        <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="50"
-                            android:orientation="vertical">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginBottom="4dp"
-                                android:drawableLeft="@drawable/ic_access_time_red_24dp"
-                                android:drawablePadding="8dp"
-                                android:fontFamily="@font/calibri"
-                                android:gravity="center"
-                                android:text="11:00 - 12:00" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:drawableLeft="@drawable/ic_event_available_red_24dp"
-                                android:drawablePadding="8dp"
-                                android:fontFamily="@font/calibri"
-                                android:gravity="center"
-                                android:text="14 Jul 2019" />
-                        </LinearLayout>
 
                         <LinearLayout
                             android:layout_width="0dp"
@@ -556,31 +426,6 @@
                         android:layout_weight="100"
                         android:orientation="horizontal">
 
-                        <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="50"
-                            android:orientation="vertical">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginBottom="4dp"
-                                android:drawableLeft="@drawable/ic_access_time_red_24dp"
-                                android:drawablePadding="8dp"
-                                android:fontFamily="@font/calibri"
-                                android:gravity="center"
-                                android:text="12:00 - 01:00" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:drawableLeft="@drawable/ic_event_available_red_24dp"
-                                android:drawablePadding="8dp"
-                                android:fontFamily="@font/calibri"
-                                android:gravity="center"
-                                android:text="15 Jul 2019" />
-                        </LinearLayout>
 
                         <LinearLayout
                             android:layout_width="0dp"

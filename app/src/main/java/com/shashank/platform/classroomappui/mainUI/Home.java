@@ -1,4 +1,4 @@
-package com.shashank.platform.classroomappui;
+package com.shashank.platform.classroomappui.mainUI;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -16,10 +16,19 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.widget.LinearLayout;
 
+import com.shashank.platform.classroomappui.R;
+import com.shashank.platform.classroomappui.businessLogic.ProfileData;
+
+import io.realm.Realm;
+import io.realm.RealmResults;
+
 public class Home extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener, View.OnClickListener {
 
     LinearLayout profile;
+
+    private Realm mRealm;
+    private boolean isProfileSet;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -115,9 +124,33 @@ public class Home extends AppCompatActivity
 
     @Override
     public void onClick(View view) {
+        mRealm = Realm.getDefaultInstance();
+
+        mRealm.executeTransaction(new Realm.Transaction() {
+            @Override
+            public void execute(Realm realm) {
+
+                // find profile created or not
+                ProfileData profileInfo = realm.where(ProfileData.class).findFirst();
+
+                if (profileInfo != null) {
+                    isProfileSet = profileInfo.isProfileSetup();
+                    System.out.println("PROFILE INFO IS NOT NULL - " +isProfileSet);
+                } else {
+                    System.out.println("PROFILE INFO IS NULL");
+                }
+            }
+        });
+
         if (view.getId() == R.id.profile) {
-            Intent intent = new Intent(getApplicationContext(), MyProfile.class);
+            Intent intent;
+            if (isProfileSet) {
+                intent = new Intent(getApplicationContext(), MyProfile.class);
+            } else {
+                intent = new Intent(getApplicationContext(), ProfileCreation.class);
+            }
             startActivity(intent);
+
         }
     }
 }

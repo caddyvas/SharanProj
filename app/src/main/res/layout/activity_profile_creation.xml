@@ -30,15 +30,8 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="100"
                         android:orientation="horizontal">
 
-                        <ImageView
-                            android:layout_width="0dp"
-                            android:layout_height="84dp"
-                            android:layout_marginRight="4dp"
-                            android:layout_weight="30"
-                            android:src="@drawable/user" />
 
                         <LinearLayout
                             android:layout_width="0dp"
@@ -48,21 +41,33 @@
                             android:layout_weight="70"
                             android:orientation="vertical">
 
-                            <TextView
-                                android:layout_width="wrap_content"
+                            <EditText
+                                android:id="@+id/enter_name_EditText"
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginBottom="4dp"
                                 android:fontFamily="@font/calibri"
-                                android:text="Sharan Mahalingam"
+                                android:background="@drawable/edittext_bg"
+                                android:ems="10"
+                                android:padding="10dp"
+                                android:drawablePadding="10dp"
+                                android:hint="Enter Name"
+                                android:text=""
                                 android:textColor="#000000"
                                 android:textSize="16sp"
                                 android:textStyle="bold" />
 
-                            <TextView
-                                android:layout_width="wrap_content"
+                            <EditText
+                                android:id="@+id/enter_course_EditText"
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:background="@drawable/edittext_bg"
+                                android:ems="10"
+                                android:padding="10dp"
+                                android:drawablePadding="10dp"
+                                android:textColor="#000000"
+                                android:hint="Enter course"
                                 android:fontFamily="@font/calibri"
-                                android:text="B.E Computer Science"
                                 android:textSize="16sp" />
 
                         </LinearLayout>
@@ -186,12 +191,16 @@
                         android:textSize="16sp"
                         android:textStyle="bold" />
 
-                    <TextView
+                    <EditText
+                        android:id="@+id/aboutMe_editText"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="100dp"
+                        android:background="@drawable/edittext_bg"
+                        android:ems="10"
+                        android:padding="10dp"
+                        android:drawablePadding="10dp"
                         android:layout_marginBottom="8dp"
                         android:fontFamily="@font/calibri"
-                        android:text="Lorem ipsum dolor sit amet consectetuer adipiscing elit. Egestas consequat habitasse magna arcu aliquam dapibus porta velit aliquam nibh ve euismod enim sapien et mattis. Morbi sit quam mus in sapien ad urna volutpat tincidunt fusce senectus odio nisi velit. Ve pellentesque cursus eu primis "
                         android:textColor="#000000"
                         android:textSize="16sp" />
 
@@ -236,12 +245,17 @@
                             android:textColor="#000000"
                             android:textSize="16sp" />
 
-                        <TextView
+                        <EditText
+                            android:id="@+id/name_editText"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="50"
+                            android:background="@drawable/edittext_bg"
+                            android:ems="10"
+                            android:padding="10dp"
+                            android:drawablePadding="10dp"
                             android:fontFamily="@font/calibri"
-                            android:text="Sharan Mahalingam"
+                            android:hint="Name"
                             android:textColor="@color/colorPrimaryDark"
                             android:textSize="16sp" />
 
@@ -269,12 +283,17 @@
                             android:textColor="#000000"
                             android:textSize="16sp" />
 
-                        <TextView
+                        <EditText
+                            android:id="@+id/phoneNo_editText"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="50"
                             android:fontFamily="@font/calibri"
-                            android:text="1234567890"
+                            android:background="@drawable/edittext_bg"
+                            android:ems="10"
+                            android:padding="10dp"
+                            android:drawablePadding="10dp"
+                            android:hint="PhoneNo"
                             android:textColor="@color/colorPrimaryDark"
                             android:textSize="16sp" />
 
@@ -302,12 +321,17 @@
                             android:textColor="#000000"
                             android:textSize="16sp" />
 
-                        <TextView
+                        <EditText
+                            android:id="@+id/email_editText"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="50"
+                            android:background="@drawable/edittext_bg"
+                            android:ems="10"
+                            android:padding="10dp"
+                            android:drawablePadding="10dp"
                             android:fontFamily="@font/calibri"
-                            android:text="sharanmahalingam@gmail.com"
+                            android:hint="Email"
                             android:textColor="@color/colorPrimaryDark"
                             android:textSize="16sp" />
 
@@ -335,12 +359,17 @@
                             android:textColor="#000000"
                             android:textSize="16sp" />
 
-                        <TextView
+                        <EditText
+                            android:id="@+id/gpa_editText"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="50"
                             android:fontFamily="@font/calibri"
-                            android:text="8.7"
+                            android:background="@drawable/edittext_bg"
+                            android:ems="10"
+                            android:padding="10dp"
+                            android:drawablePadding="10dp"
+                            android:hint="GPA"
                             android:textColor="@color/colorPrimaryDark"
                             android:textSize="16sp" />
 
@@ -368,12 +397,17 @@
                             android:textColor="#000000"
                             android:textSize="16sp" />
 
-                        <TextView
+                        <EditText
+                            android:id="@+id/areaOfInterest_editText"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="50"
+                            android:background="@drawable/edittext_bg"
+                            android:ems="10"
+                            android:padding="10dp"
+                            android:drawablePadding="10dp"
                             android:fontFamily="@font/calibri"
-                            android:text="Data science, Computer Networks, DBMS"
+                            android:hint="Areas of Interest"
                             android:textColor="@color/colorPrimaryDark"
                             android:textSize="16sp" />
 
@@ -383,6 +417,22 @@
                 </LinearLayout>
 
             </android.support.v7.widget.CardView>
+
+            <Button
+                android:id="@+id/submit_button"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/red_rounded_solid"
+                android:fontFamily="@font/calibri"
+                android:enabled="false"
+                android:text="SUBMIT"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
         </LinearLayout>
 
