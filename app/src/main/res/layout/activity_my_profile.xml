@@ -53,7 +53,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginBottom="4dp"
                                 android:fontFamily="@font/calibri"
-                                android:text="Shashank Singhal"
+                                android:text="Sharan Mahalingam"
                                 android:textColor="#000000"
                                 android:textSize="16sp"
                                 android:textStyle="bold" />
@@ -62,7 +62,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/calibri"
-                                android:text="Ajmer, Rajasthan"
+                                android:text="B.E Computer Science"
                                 android:textSize="16sp" />
 
                         </LinearLayout>
@@ -104,7 +104,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/calibri"
-                                android:text="Subscribed"
+                                android:text="Subscribers"
                                 android:textSize="16sp" />
                         </LinearLayout>
 
@@ -120,7 +120,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginBottom="4dp"
                                 android:fontFamily="@font/calibri"
-                                android:text="39"
+                                android:text="339"
                                 android:textColor="#000000"
                                 android:textSize="16sp"
                                 android:textStyle="bold" />
@@ -129,7 +129,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/calibri"
-                                android:text="Courses"
+                                android:text="Following"
                                 android:textSize="16sp" />
 
                         </LinearLayout>
@@ -146,7 +146,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginBottom="4dp"
                                 android:fontFamily="@font/calibri"
-                                android:text="4.0"
+                                android:text="3rd"
                                 android:textColor="#000000"
                                 android:textSize="16sp"
                                 android:textStyle="bold" />
@@ -155,7 +155,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/calibri"
-                                android:text="Avg. Ratings"
+                                android:text="Year"
                                 android:textSize="16sp" />
 
                         </LinearLayout>
@@ -191,7 +191,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="8dp"
                         android:fontFamily="@font/calibri"
-                        android:text="Lorem ipsum dolor sit amet consectetuer adipiscing elit. Egestas consequat habitasse magna arcu aliquam dapibus porta velit aliquam nibh ve euismod enim sapien et mattis. Morbi sit quam mus in sapien ad urna volutpat tincidunt fusce senectus odio nisi velit. Ve pellentesque cursus eu primis dolor sit nisl nisl interdum fames gravida. Porttitor nec rutrum in adipiscing urna platea quis neque cursus. Faucibus sed condimentum sed tellus vel urna! Scelerisque sagittis ullamcorper ante vivamus cursus enim rhoncus ad. Suspendisse erat augue accumsan cum amet a etiam feugiat lobortis volutpat et. Vitae ac sapien laoreet eleifend justo magna nostra. Inceptos fusce aliquet risus interdum amet auctor."
+                        android:text="Lorem ipsum dolor sit amet consectetuer adipiscing elit. Egestas consequat habitasse magna arcu aliquam dapibus porta velit aliquam nibh ve euismod enim sapien et mattis. Morbi sit quam mus in sapien ad urna volutpat tincidunt fusce senectus odio nisi velit. Ve pellentesque cursus eu primis "
                         android:textColor="#000000"
                         android:textSize="16sp" />
 
@@ -216,7 +216,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="16dp"
                         android:fontFamily="@font/calibri"
-                        android:text="Account Details"
+                        android:text="My Info"
                         android:textColor="#000000"
                         android:textSize="16sp"
                         android:textStyle="bold" />
@@ -241,7 +241,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="50"
                             android:fontFamily="@font/calibri"
-                            android:text="Shashank Singhal"
+                            android:text="Sharan Mahalingam"
                             android:textColor="@color/colorPrimaryDark"
                             android:textSize="16sp" />
 
@@ -274,7 +274,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="50"
                             android:fontFamily="@font/calibri"
-                            android:text="9782444729"
+                            android:text="1234567890"
                             android:textColor="@color/colorPrimaryDark"
                             android:textSize="16sp" />
 
@@ -307,11 +307,78 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="50"
                             android:fontFamily="@font/calibri"
-                            android:text="shashanksinghal02@gmail.com"
+                            android:text="sharanmahalingam@gmail.com"
                             android:textColor="@color/colorPrimaryDark"
                             android:textSize="16sp" />
 
                     </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="#80D1D1D1" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="100"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="50"
+                            android:fontFamily="@font/calibri"
+                            android:text="GPA"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="50"
+                            android:fontFamily="@font/calibri"
+                            android:text="8.7"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="#80D1D1D1" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="100"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="50"
+                            android:fontFamily="@font/calibri"
+                            android:text="Area of Interest"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="50"
+                            android:fontFamily="@font/calibri"
+                            android:text="Data science, Computer Networks, DBMS"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
 
                 </LinearLayout>
 
