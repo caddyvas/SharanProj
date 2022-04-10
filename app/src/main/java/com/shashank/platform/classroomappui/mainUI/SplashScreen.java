@@ -8,8 +8,6 @@ import android.view.WindowManager;
 
 import com.shashank.platform.classroomappui.R;
 
-import io.realm.Realm;
-
 public class SplashScreen extends AppCompatActivity {
 
     @Override
@@ -30,9 +28,5 @@ public class SplashScreen extends AppCompatActivity {
             }
         };
         timerThread.start();
-    }
-
-    private void initializeRealm() {
-        Realm.init(this);
     }
 }

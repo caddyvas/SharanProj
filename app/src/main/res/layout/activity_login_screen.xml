@@ -22,10 +22,10 @@
 
             <ImageView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="130dp"
                 android:layout_gravity="center"
                 android:layout_marginBottom="44dp"
-                android:src="@drawable/kdemy_logo" />
+                android:src="@drawable/sathyabamalogo" />
 
             <Button
                 android:layout_width="match_parent"

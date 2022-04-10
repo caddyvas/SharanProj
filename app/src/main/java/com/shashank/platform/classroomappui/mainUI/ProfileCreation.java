@@ -27,7 +27,7 @@ public class ProfileCreation extends AppCompatActivity implements View.OnClickLi
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile_creation);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         name = findViewById(R.id.enter_name_EditText);
         aboutMe = findViewById(R.id.aboutMe_editText);
         phoneNo = findViewById(R.id.phoneNo_editText);
@@ -48,6 +48,11 @@ public class ProfileCreation extends AppCompatActivity implements View.OnClickLi
     public void onClick(View view) {
         Realm realm = null;
         if (view.getId() == R.id.submit_button) {
+            if(!areAllFieldsSet()) {
+                Toast.makeText(getApplicationContext(), "Please complete all fields", Toast.LENGTH_SHORT).show();
+                return;
+            }
+
             try {
                 realm = Realm.getDefaultInstance();
                 realm.executeTransaction(new Realm.Transaction() {
@@ -65,6 +70,8 @@ public class ProfileCreation extends AppCompatActivity implements View.OnClickLi
                             profileInfo.setPhoneNo(phoneNo.getText().toString().trim());
                             profileInfo.setProfileSetup(true);
 
+                            System.out.println("REALM VALUES SET");
+
                             realm.copyToRealm(profileInfo);
 
                         } catch (RealmPrimaryKeyConstraintException e) {
@@ -80,5 +87,17 @@ public class ProfileCreation extends AppCompatActivity implements View.OnClickLi
 
             finish();
         }
+    }
+
+    private boolean areAllFieldsSet() {
+        String strName = name.getText().toString();
+        String strAboutMe = aboutMe.getText().toString();
+        String strPhoneNo = phoneNo.getText().toString();
+        String strGpa = gpa.getText().toString();
+        String strEmail = email.getText().toString();
+        String strArea = area.getText().toString();
+
+        return !strName.matches("") && !strAboutMe.matches("") && !strPhoneNo.matches("") && !strGpa.matches("")
+                && !strEmail.matches("") && !strArea.matches("");
     }
 }

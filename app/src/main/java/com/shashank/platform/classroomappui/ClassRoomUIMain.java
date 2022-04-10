@@ -16,10 +16,10 @@ public class ClassRoomUIMain extends Application {
 
     private void initializeRealm() {
         // initialize Realm
-        Realm.init(getApplicationContext());
+        Realm.init(this);
 
         // Realm Configuration setup
-        RealmConfiguration config = new RealmConfiguration.Builder().deleteRealmIfMigrationNeeded().build();
+        RealmConfiguration config = new RealmConfiguration.Builder().allowWritesOnUiThread(true).deleteRealmIfMigrationNeeded().build();
 
         Realm.setDefaultConfiguration(config);
 
