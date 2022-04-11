@@ -21,6 +21,10 @@
             android:icon="@drawable/ic_schedule_black_24dp"
             android:title="Announcements" />
         <item
+            android:id="@+id/nav_discussion"
+            android:icon="@drawable/ic_baseline_discuss_24"
+            android:title="Discussion" />
+        <item
             android:id="@+id/nav_settings"
             android:icon="@drawable/ic_settings_black_24dp"
             android:title="Settings" />

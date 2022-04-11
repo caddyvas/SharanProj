@@ -105,6 +105,9 @@ public class Home extends AppCompatActivity
         } else if (id == R.id.nav_announcements) {
             Intent intent = new Intent(getApplicationContext(), Announcements.class);
             startActivity(intent);
+        } else if(id == R.id.nav_discussion) {
+            Intent intent = new Intent(getApplicationContext(), Discussion.class);
+            startActivity(intent);
         } else if (id == R.id.nav_settings) {
             Intent intent = new Intent(getApplicationContext(), Settings.class);
             startActivity(intent);

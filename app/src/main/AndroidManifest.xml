@@ -18,42 +18,57 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".mainUI.Announcements"
+            android:screenOrientation="portrait"
             android:configChanges="orientation|screenSize"
             android:label="Announcements" />
         <activity
             android:name=".mainUI.Lectures"
+            android:screenOrientation="portrait"
             android:configChanges="orientation|screenSize"
             android:label="Lectures" />
         <activity
             android:name=".mainUI.Events"
+            android:screenOrientation="portrait"
             android:configChanges="orientation|screenSize"
             android:label="Events" />
         <activity
             android:name=".mainUI.Courses"
+            android:screenOrientation="portrait"
             android:configChanges="orientation|screenSize"
             android:label="Courses" />
         <activity
             android:name=".mainUI.MyProfile"
+            android:screenOrientation="portrait"
             android:configChanges="orientation|screenSize"
             android:label="My Profile" />
         <activity
             android:name=".mainUI.Home"
+            android:screenOrientation="portrait"
             android:label="@string/title_activity_home"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".mainUI.SignupScreen"
+            android:screenOrientation="portrait"
             android:configChanges="orientation|screenSize"
             android:theme="@style/MyAppTheme" />
         <activity
+            android:name=".mainUI.Discussion"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:label="Discussion Forum" />
+        <activity
             android:name=".mainUI.ProfileCreation"
+            android:screenOrientation="portrait"
             android:configChanges="orientation|screenSize"
             android:theme="@style/MyAppTheme" />
         <activity
             android:name=".mainUI.LoginScreen"
+            android:screenOrientation="portrait"
             android:configChanges="orientation|screenSize"
             android:theme="@style/MyAppTheme" />
         <activity
             android:name=".mainUI.SplashScreen"
+            android:screenOrientation="portrait"
             android:configChanges="orientation|screenSize"
             android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>
