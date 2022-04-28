@@ -54,6 +54,7 @@
         <activity
             android:name=".mainUI.Discussion"
             android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="adjustResize"
             android:screenOrientation="portrait"
             android:label="Discussion Forum" />
         <activity
