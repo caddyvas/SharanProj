@@ -27,6 +27,7 @@ public class Discussion extends AppCompatActivity implements View.OnClickListene
     private ArrayList<DiscussionData> discussionModelArrayList = new ArrayList<>();
     private LinearLayoutManager linearLayoutManager;
     private ChatAdapter chatAdapter;
+    private Realm mRealm;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,7 +41,7 @@ public class Discussion extends AppCompatActivity implements View.OnClickListene
         button.setOnClickListener(this);
 
         // pull data from server, stub for now
-        Realm mRealm = Realm.getDefaultInstance();
+        mRealm = Realm.getDefaultInstance();
 
         mRealm.executeTransaction(new Realm.Transaction() {
             @Override
@@ -79,7 +80,7 @@ public class Discussion extends AppCompatActivity implements View.OnClickListene
             String content = mEditText.getText().toString();
             if (!content.equals("")) {
 
-                DiscussionData discussionData = new DiscussionData();
+                final DiscussionData discussionData = new DiscussionData();
                 discussionData.setContent(content);
                 discussionData.setUserName("Sharan");
 
@@ -93,8 +94,19 @@ public class Discussion extends AppCompatActivity implements View.OnClickListene
                 // add it to arraylist
                 discussionModelArrayList.add(discussionData);
 
-                chatAdapter.notifyDataSetChanged();
+                // insertOrUpdate to realm
+                mRealm = Realm.getDefaultInstance();
 
+                mRealm.executeTransaction(new Realm.Transaction() {
+                    @Override
+                    public void execute(Realm realm) {
+
+                        // find profile created or not
+                        realm.insertOrUpdate(discussionData);
+                    }
+                });
+
+                chatAdapter.notifyDataSetChanged();
             }
         }
     }
